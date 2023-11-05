@@ -1,52 +1,36 @@
-import './Home.css';
+import home from "../../Images/home.png";
+import profile from "../../Images/profile.jpg";
+import About from "../About me/About";
+import Contact from "../Contact/Contact";
+import Project from "../Projects/Project";
+import Resume from "../Resume/Resume";
 
 const Home = () => {
     return (
-        <div id="info">
-            <div id="introduction">
-                <img id="profile-image"></img>
+        <div className="w-full h-full sm:px-5 md:px-16 lg:px-24 xl:px-36 2xl:px-48 3xl:px-60">
+            <div className="w-full h-full">
 
-                <h2 id="name">Nitish Kumar Sharma</h2>
+                <section className="flex items-center px-2 py-2 sticky top-0 bg-white">
 
-                <h4 id="field">Frontend Developer</h4>
+                    <img src={home} className="w-5 h-5"></img>
 
-                <a href="mailto:nk.sharma2626@gmail.com" id="gmail-link">
-                    <img id="gmail-contact"></img>
-                    Gmail
-                </a>
+                    <h1 className="mx-2 text-xl">Home</h1>
 
-                <a href="https://linkedin.com/in/nitish-sharma-9465ab252" id="linkedin-link">
-                    <img id="linkedin-contact"></img>
-                    Linkedin
-                </a>
+                </section>
 
-                <a href="https://github.com/Nitish2626" id="github-link">
-                    <img id="github-contact"></img>
-                    Github
-                </a>
+                <section className="flex flex-col items-center justify-center rounded-md py-1 mx-2 shadow-[1px_1px_10px_0px_grey] mb-5">
 
-                <a href="tel:+91 8976520212" id="phone-link">
-                    <img id="tel"></img>
-                    Phone
-                </a>
+                    <img src={profile} className="w-32 h-40 border rounded-full"></img>
+                    <h1 className="text-xl">Nitish Kumar Sharma</h1>
+                    <h2 className="text-lg text-blue-700 font-semibold">Frontend Developer</h2>
 
-                <a id="download-link" download><img id="download-image"></img>C.V</a>
+                </section>
 
-                <a id="view-link" target="_blank"><img id="view-image"></img>C.V</a>
-            </div>
+                <About />
+                <Contact />
+                <Project />
+                <Resume />
 
-            <div id="about-me">
-                <h3 id="about-text"><img id="about-image"></img>About Me</h3>
-                <hr width="100%" color="grey"></hr><br></br>
-                <p>
-                    My name is <strong>Nitish Kumar Sharma</strong>, currently i'd opted <strong>BCA (Bachelor of Computer Applications)</strong> Undergraduate degree program from <strong>Yashwantrao Chavan Maharashtra Open University (YCMOU)</strong>.
-                </p><br></br>
-                <p>
-                    I am <strong>Frontend Web Developer</strong> with profound knowledge of <strong>HTML5, CSS3, JAVASCRIPT and REACT JS</strong>. Now, I am learning how to make dynamic <strong>Web Apps</strong> and vision is to learn all <strong>Full Stack Technologies</strong>.
-                </p><br></br>
-                <p>
-                    I am a very <strong>passionate developer</strong> and always try to learn and understand things to become better and <strong>build better</strong>.
-                </p>
             </div>
         </div>
     );
