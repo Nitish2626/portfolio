@@ -12,6 +12,8 @@ import git from "../../Images/git.png";
 import mongodb from "../../Images/mongodb.png";
 import mysql from "../../Images/mysql.png";
 import redirect from "../../Images/redirect.png";
+import download from "../../Images/download.png";
+import cv from "../Links/Resume.pdf";
 import { Link } from "react-router-dom";
 
 const Resume = () => {
@@ -187,6 +189,13 @@ const Resume = () => {
                     <h1 className="text-xl my-3">Projects</h1>
 
                     <Link to="/projects" className="text-white bg-blue-500 font-semibold text-lg w-32 border rounded-lg flex items-center justify-center gap-2 py-1">Projects <img src={redirect} className="w-6 h-6"></img></Link>
+
+                    <h1 className="text-xl my-3">Resume</h1>
+
+                    <a href={cv} download className="text-white bg-blue-500 font-semibold text-lg w-32 border rounded-lg flex items-center justify-center gap-2 py-1 mt-2">
+                        Resume
+                        <img src={download} className="w-6 h-6"></img>
+                    </a>
 
                 </section>
 
