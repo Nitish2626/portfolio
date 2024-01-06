@@ -192,7 +192,7 @@ const Resume = () => {
 
                     <h1 className="text-xl my-3">Resume</h1>
 
-                    <a href={cv} download className="text-white bg-blue-500 font-semibold text-lg w-32 border rounded-lg flex items-center justify-center gap-2 py-1 mt-2">
+                    <a href={cv} download className="text-white bg-blue-500 font-semibold text-lg w-32 border rounded-lg flex items-center justify-center gap-2 py-1 mt-2z">
                         Resume
                         <img src={download} className="w-6 h-6"></img>
                     </a>
