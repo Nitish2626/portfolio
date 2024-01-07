@@ -1,20 +1,18 @@
 import { Link } from "react-router-dom";
-import project from "../../Images/project.png";
+import portfolio from "../../Images/resume.png";
+import HeadingContainer from "../heading container/HeadingContainer";
 
 const Project = () => {
     return (
         <div className="sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2">
-            <div className="w-full h-full pb-20">
+            <div className="w-full">
 
-                <section className="flex items-center px-2 py-2 sticky top-0 bg-white">
+                <HeadingContainer 
+                    src={portfolio}
+                    text="Portfolio"
+                />
 
-                    <img src={project} className="w-7 h-7"></img>
-
-                    <h1 className="mx-2 text-xl">Projects</h1>
-
-                </section>
-
-                <section className="mx-1 my-2 px-2 py-2 bg-slate-200 border rounded-lg">
+                {/* <section className="mx-1 my-2 px-2 py-2 bg-slate-200 border rounded-lg">
 
                     <h2 className="font-bold">
                         1. Calculator WebApp
@@ -58,7 +56,7 @@ const Project = () => {
                         </Link>
                     </p>
 
-                </section>
+                </section> */}
 
             </div>
         </div>
