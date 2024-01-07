@@ -5,7 +5,7 @@ const SocialLinks = (props) => {
         <section className="flex items-center justify-start ">
 
             <img src={props.src} className="w-4 h-4 mx-2" alt="social"></img>
-            <Link to={props.link} className="text-blue-700 text-md">
+            <Link to={props.link} className="text-blue-700 text-md" target="blank">
                 {props.text}
             </Link>
 

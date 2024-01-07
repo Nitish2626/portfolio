@@ -1,26 +1,33 @@
 import about from "../../Images/about.png";
+import HeadingContainer from "../heading container/HeadingContainer";
+import ParagraphTag from "../paragraph tag container/ParagraphTag";
+import SpanTag from "../span tag container/SpanTag";
 
 const About = () => {
 
     return (
         <div className="sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2">
-            <div className="w-full h-full pb-20">
+            <div className="w-full">
 
-                <section className="flex items-center px-2 py-2 sticky top-0 bg-white">
+                {/* <section className="flex items-center px-2 py-2 sticky top-0 bg-white">
 
                     <img src={about} className="w-6 h-6"></img>
 
                     <h1 className="mx-2 text-xl">About Me</h1>
 
-                </section>
+                </section> */}
+                <HeadingContainer 
+                    src={about}
+                    text=""
+                />
 
-                <p className="mx-1 my-2 text-lg">
-                    My name is <span className="text-blue-700">Nitish Kumar Sharma</span> and i am <span className="text-blue-700">Frontend Developer</span> with profound knowledge of <span className="text-blue-700">HTML5, CSS3, JAVASCRIPT, Tailwind CSS and REACT JS</span>. Now, I am learning how to make <span className="text-blue-700">Backend Technologies using NODE JS and EXPRESS JS</span> and vision is to learn all <span className="text-blue-700">Full Stack Technologies</span>.
-                </p>
+                <ParagraphTag 
+                    text={<>My name is <SpanTag text="Nitish Kumar Sharma" /> and i am <SpanTag text="Full Stack Developer" /> with profound knowledge of <SpanTag text="HTML5, CSS3, Tailwind CSS, JAVASCRIPT, TYPESCRIPT, REACT JS, NODE JS, EXPRESS JS, MONGODB, MYSQL, GIT, GitHub" /></>}
+                />
 
-                <p className="mx-1 my-2 text-lg">
-                    I am a very <span className="text-blue-700">passionate developer</span> and always try to learn and understand things to become better and <span className="text-blue-700">build better</span>.
-                </p>
+                <ParagraphTag 
+                    text={<>I am very <SpanTag text="passionate developer in Full Stack Web Technologies" /> and always try to learn from building things.</>}
+                />
 
                 <p className="mx-1 my-2 text-lg">
                     Currently i am pursuing <span className="text-blue-700">BCA (Bachelor of Computer Application)</span> from <span className="text-blue-700">YCMOU (Yashwantrao Chavan Maharashtra Open University) in 2022</span>, now i am in 2<sup>nd</sup> year

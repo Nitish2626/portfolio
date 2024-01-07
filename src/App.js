@@ -1,8 +1,8 @@
-import Navigation from "./components/Navigation/Navigation";
-import Home from "./components/Home/Home";
-import About from "./components/About me/About";
-import Project from "./components/Projects/Project";
-import Resume from "./components/Resume/Resume";
+import Navigation from "./components/navigation/Navigation";
+import Home from "./components/home/Home";
+import About from "./components/about me/About";
+import Project from "./components/projects/Project";
+import Resume from "./components/resume/Resume";
 import {
   BrowserRouter as Router,
   Routes,

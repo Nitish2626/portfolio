@@ -13,7 +13,7 @@ import mongodb from "../../Images/mongodb.png";
 import mysql from "../../Images/mysql.png";
 import redirect from "../../Images/redirect.png";
 import download from "../../Images/download.png";
-import cv from "../Links/Resume.pdf";
+import cv from "../links/Resume.pdf";
 import { Link } from "react-router-dom";
 
 const Resume = () => {
