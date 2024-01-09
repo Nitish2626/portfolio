@@ -12,43 +12,38 @@ const Education = () => {
                     text="Education"
                 />
 
-                <ParagraphTag
-                    text={<>
-                        Currently i am in 2<sup>nd</sup> year pursuing
-                        <SpanTag text=" BCA (Bachelor of Computer Application) " /> from
-                        <SpanTag text=" YCMOU (Yashwantrao Chavan Maharashtra Open University)." />
-                    </>}
-                />
+                <ParagraphTag>
+                    Currently i am in 2<sup>nd</sup> year pursuing
+                    <SpanTag>  BCA (Bachelor of Computer Application) </SpanTag>
+                    from
+                    <SpanTag>  YCMOU (Yashwantrao Chavan Maharashtra Open University).</SpanTag>
+                </ParagraphTag>
 
-                <ParagraphTag
-                    text={<>
-                        I have completed my
-                        <SpanTag text=" Intermediate (10+2) " />
-                        in 2022 from
-                        <SpanTag text=" Maharashtra State Board " />
-                        and i have obtained
-                        <SpanTag text=" 70% " />
-                        in
-                        <SpanTag text=" Science (PCB) Stream " />
-                        with
-                        <SpanTag text=" I.T (Information Technology) " />
-                        as an optional subject.
-                    </>}
-                />
+                <ParagraphTag>
+                    I have completed my
+                    <SpanTag> Intermediate (10+2) </SpanTag>
+                    in 2022 from
+                    <SpanTag>  Maharashtra State Board </SpanTag>
+                    and i have obtained
+                    <SpanTag> 70% </SpanTag>
+                    in
+                    <SpanTag> Science (PCB) Stream </SpanTag>
+                    with
+                    <SpanTag> I.T (Information Technology) </SpanTag>
+                    as an optional subject.
+                </ParagraphTag>
 
-                <ParagraphTag
-                    text={<>
-                        I have completed my
-                        <SpanTag text={<> SSC (10<sup>th</sup>) </>} />
-                        from
-                        <SpanTag text=" Maharashtra State Board " />
-                        in 2020 and i have obtained
-                        <SpanTag text=" 83% " />
-                        in it.
-                    </>}
-                />
+                <ParagraphTag>
+                    I have completed my
+                    <SpanTag> SSC (10<sup>th</sup>) </SpanTag>
+                    from
+                    <SpanTag> Maharashtra State Board </SpanTag>
+                    in 2020 and i have obtained
+                    <SpanTag> 83% </SpanTag>
+                    in it.
+                </ParagraphTag>
             </div>
-        </div>
+        </div >
     );
 }
 

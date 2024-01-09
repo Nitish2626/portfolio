@@ -14,24 +14,20 @@ const About = () => {
                     text="About Me"
                 />
 
-                <ParagraphTag
-                    text={<>
-                        My name is
-                        <SpanTag text=" Nitish Kumar Sharma " />
-                        and i am
-                        <SpanTag text=" Full Stack Developer " />
-                        with profound knowledge of
-                        <SpanTag text=" HTML5, CSS3, Tailwind CSS, JAVASCRIPT, TYPESCRIPT, REACT JS, NODE JS, EXPRESS JS, MONGODB, MYSQL, GIT, GitHub." />
-                    </>}
-                />
+                <ParagraphTag>
+                    My name is
+                    <SpanTag>  Nitish Kumar Sharma </SpanTag>
+                    and i am
+                    <SpanTag> Full Stack Developer </SpanTag> 
+                    with profound knowledge of
+                    <SpanTag>  HTML5, CSS3, Tailwind CSS, JAVASCRIPT, TYPESCRIPT, REACT JS, NODE JS, EXPRESS JS, MONGODB, MYSQL, GIT, GitHub.</SpanTag>
+                </ParagraphTag>
 
-                <ParagraphTag
-                    text={<>
-                        I am very 
-                        <SpanTag text=" passionate developer in Full Stack Web Technologies " /> 
-                        and always try to learn from building things.
-                    </>}
-                />                
+                <ParagraphTag>
+                    I am very
+                    <SpanTag> passionate developer </SpanTag>
+                    and always try to learn from building things.
+                </ParagraphTag>
             </div>
         </div>
     );

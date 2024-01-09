@@ -1,63 +1,220 @@
 import { Link } from "react-router-dom";
 import portfolio from "../../Images/resume.png";
 import HeadingContainer from "../heading container/HeadingContainer";
+import ProjectContainer from "../projects container/ProjectContainer";
+import html from "../../Images/html.png";
+import css from "../../Images/css.png";
+import tc from "../../Images/tailwind.png";
+import js from "../../Images/js.png";
+import react from "../../Images/react.png";
+import github from "../../Images/github.png";
+import ImageSection from "../image section/ImageSection";
+import ImageCont from "../image container/ImageCont";
+import H2Cont from "../h2 container/H2Cont";
+import OrderedListCont from "../ordered list container/OrderedListCont";
+import ListTag from "../list tag/ListTag";
+import UnorderedListCont from "../unordered list container/UnorderedListCont";
+import SocialLinks from "../social links/SocialLinks";
+import eduinfo from "../../Images/Eduinfo.png";
 
 const Project = () => {
     return (
         <div className="sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2">
             <div className="w-full">
-
-                <HeadingContainer 
+                <HeadingContainer
                     src={portfolio}
                     text="Portfolio"
                 />
 
-                {/* <section className="mx-1 my-2 px-2 py-2 bg-slate-200 border rounded-lg">
+                <ProjectContainer>
+                    <H2Cont>
+                        <OrderedListCont start="1">
+                            <ListTag>
+                                Weather WebApp
+                            </ListTag>
+                        </OrderedListCont>
+                    </H2Cont>
 
-                    <h2 className="font-bold">
-                        1. Calculator WebApp
-                    </h2>
+                    <ImageSection>
+                        <ImageCont
+                            src={html}
+                            alt="HTML"
+                        />
+                        <ImageCont
+                            src={css}
+                            alt="CSS"
+                        />
+                        <ImageCont
+                            src={tc}
+                            alt="Tailwind CSS"
+                        />
+                        <ImageCont
+                            src={js}
+                            alt="JavaScript"
+                        />
+                        <ImageCont
+                            src={react}
+                            alt="React JS"
+                        />
+                    </ImageSection>
 
-                    <p className="my-2 text-lg">
-                        This WebApp is made using <span className="text-blue-700">HTML, CSS, JAVASCRIPT and REACT JS</span> and contains four different types of <span className="text-blue-700">Calculators</span> which is used to perform various types of calculations in our daily life. <span className="text-blue-700">WebApp is fully responsive and compatible with all types of devices</span>.
-                    </p>
-                    <p>
-                        WebApp URL :
-                        <Link className="text-blue-700 font-semibold" to="https://usecalc.000webhostapp.com" target="blank">
-                            https://usecalc.000webhostapp.com
+                    <UnorderedListCont>
+                        <ListTag>
+                            App is made using
+                            <Link
+                                to="https://www.weatherapi.com/"
+                                className="text-blue-400 hover:underline decoration-solid pl-1"
+                                target="blank"
+                            >
+                                Weather API
+                            </Link>.
+                        </ListTag>
+                        <ListTag>
+                            Allowing
+                            <strong> Location Permission </strong>
+                            will help to find
+                            <strong> Current Location Weather Conditions</strong>.
+                        </ListTag>
+                        <ListTag>
+                            Search using
+                            <strong> City name </strong>
+                            or
+                            <strong> Latitude, Longitude </strong>
+                            in search bar for getting
+                            <strong> desired location Weather Conditions</strong>.
+                        </ListTag>
+                        <ListTag>
+                            Search bar provides
+                            <strong> Suggestion Feature </strong>,
+                            which will help in
+                            <strong> Faster Search </strong>.
+                            Switching
+                            <strong> Dark Mode </strong>
+                            will provide better
+                            <strong> UI experience</strong>.
+                        </ListTag>
+                    </UnorderedListCont>
+
+                    <SocialLinks
+                        to="https://github.com/Nitish2626/weather-app"
+                        src={github}
+                    />
+                </ProjectContainer>
+
+                <ProjectContainer>
+                    <H2Cont>
+                        <OrderedListCont start="2">
+                            <ListTag>
+                                News WebApp
+                            </ListTag>
+                        </OrderedListCont>
+                    </H2Cont>
+
+                    <ImageSection>
+                        <ImageCont
+                            src={html}
+                            alt="HTML"
+                        />
+                        <ImageCont
+                            src={css}
+                            alt="CSS"
+                        />
+                        <ImageCont
+                            src={tc}
+                            alt="Tailwind CSS"
+                        />
+                        <ImageCont
+                            src={js}
+                            alt="JavaScript"
+                        />
+                        <ImageCont
+                            src={react}
+                            alt="React JS"
+                        />
+                    </ImageSection>
+
+                    <UnorderedListCont>
+                        <ListTag>
+                            App is made using
+                            <Link
+                                to="https://newsapi.org/"
+                                className="text-blue-400 hover:underline decoration-solid pl-1"
+                                target="blank"
+                            >
+                                News API
+                            </Link>.
+                        </ListTag>
+                        <ListTag>
+                            App contains
+                            <strong> Top-headlines from 53 Countries </strong>
+                            in their
+                            <strong> Regional Language, country name is also changeable</strong>.
+                        </ListTag>
+                        <ListTag>
+                            Search using
+                            <strong> News Description </strong>
+                            in search bar for getting
+                            <strong> desired News</strong>.
+                        </ListTag>
+                    </UnorderedListCont>
+
+                    <SocialLinks
+                        to="https://github.com/Nitish2626/news-app"
+                        src={github}
+                    />
+                </ProjectContainer>
+
+                <ProjectContainer>
+                    <H2Cont>
+                        <OrderedListCont start="3">
+                            <ListTag>
+                                Calculator WebApp
+                            </ListTag>
+                        </OrderedListCont>
+                    </H2Cont>
+
+                    <ImageSection>
+                        <ImageCont
+                            src={html}
+                            alt="HTML"
+                        />
+                        <ImageCont
+                            src={css}
+                            alt="CSS"
+                        />
+                        <ImageCont
+                            src={js}
+                            alt="JavaScript"
+                        />
+                        <ImageCont
+                            src={react}
+                            alt="React JS"
+                        />
+                    </ImageSection>
+
+                    <UnorderedListCont>
+                        <ListTag>
+                            App contains
+                            <strong> 4 different types of Calculators </strong>
+                            which is used to
+                            <strong> Calculate day-to-day Calculations</strong>.
+                        </ListTag>
+                    </UnorderedListCont>
+
+                    <section className="flex">
+                        <Link
+                            to="https://usecalc.000webhostapp.com/"
+                            target="blank"
+                            className="w-18 h-18 rounded-full hover:bg-black">
+                            <img src={eduinfo} className="w-14 h-14"></img>
                         </Link>
-                    </p>
-                    <p>
-                        GitHub Source Code URL :
-                        <Link className="text-blue-700 font-semibold" to="https://github.com/Nitish2626/usecalc" target="blank">
-                            https://github.com/Nitish2626/usecalc
-                        </Link>
-                    </p>
-                </section>
 
-                <section className="mx-1 my-2 px-2 py-2 bg-slate-200 border rounded-lg">
-
-                    <h2 className="font-bold">
-                        2. News WebApp
-                    </h2>
-
-                    <p className="my-2 text-lg">
-                        This WebApp is made using <span className="text-blue-700">HTML, CSS, JAVASCRIPT and REACT JS</span> and contains <span className="text-blue-700">top-headlines from 53 countries in their regional languages.</span> This News App is made using third-party news api. <span className="text-blue-700">WebApp is fully responsive and compatible with all types of devices</span>.
-                    </p>
-
-                    <p className="text-lg">
-                        <span className="text-blue-700">I have used third-party api, that's why i can't host it.</span>
-                    </p>
-
-                    <p>
-                        GitHub Source Code URL :
-                        <Link className="text-blue-700 font-semibold" to="https://github.com/Nitish2626/news-app" target="blank">
-                            https://github.com/Nitish2626/news-app
-                        </Link>
-                    </p>
-
-                </section> */}
-
+                        <SocialLinks
+                            link="https://github.com/Nitish2626/usecalc"
+                            src={github}
+                        />
+                    </section>
+                </ProjectContainer>
             </div>
         </div>
     );
