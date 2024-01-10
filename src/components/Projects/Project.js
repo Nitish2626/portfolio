@@ -20,13 +20,13 @@ import eduinfo from "../../Images/Eduinfo.png";
 const Project = () => {
     return (
         <div className="sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2">
-            <div className="w-full">
+            <div className="w-full pb-10">
                 <HeadingContainer
                     src={portfolio}
                     text="Portfolio"
                 />
 
-                <ProjectContainer>
+                <ProjectContainer backgroundImage="before:bg-[url('/src/Images/weather-logo.png')]">
                     <H2Cont>
                         <OrderedListCont start="1">
                             <ListTag>
@@ -101,7 +101,7 @@ const Project = () => {
                     />
                 </ProjectContainer>
 
-                <ProjectContainer>
+                <ProjectContainer backgroundImage="before:bg-[url('/src/Images/news.jpg')]">
                     <H2Cont>
                         <OrderedListCont start="2">
                             <ListTag>
@@ -164,7 +164,7 @@ const Project = () => {
                     />
                 </ProjectContainer>
 
-                <ProjectContainer>
+                <ProjectContainer backgroundImage="before:bg-[url('/src/Images/Eduinfo.png')]">
                     <H2Cont>
                         <OrderedListCont start="3">
                             <ListTag>
@@ -201,12 +201,12 @@ const Project = () => {
                         </ListTag>
                     </UnorderedListCont>
 
-                    <section className="flex">
+                    <section className="flex relative">
                         <Link
                             to="https://usecalc.000webhostapp.com/"
                             target="blank"
                             className="w-18 h-18 rounded-full hover:bg-black">
-                            <img src={eduinfo} className="w-14 h-14"></img>
+                            <img src={eduinfo} className="w-14 h-14" alt="Website"></img>
                         </Link>
 
                         <SocialLinks

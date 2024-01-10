@@ -10,7 +10,12 @@ module.exports = {
         "xl":"1000px",
         "2xl":"1200px",
         "3xl":"1400px",
-      }
+      },
+      backgroundImage:{
+        "weather":"url('/src/Images/weather-logo.png')",
+        "news":"url('/src/Images/news.jpg')",
+        "calculator":"url('/src/Images/Eduinfo.png')",
+      },
     }, 
   },
   plugins: [],

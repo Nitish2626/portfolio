@@ -1,6 +1,6 @@
 const H2Cont = (props) => {
     return ( 
-        <h2 className="text-xl">
+        <h2 className="relative text-xl">
             {props.children}
         </h2>
      );

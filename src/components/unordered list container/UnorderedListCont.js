@@ -1,6 +1,6 @@
 const UnorderedListCont = (props) => {
     return (
-        <ul className="list-disc mt-2">
+        <ul className="relative list-disc mt-2">
             {props.children}
         </ul>
     );

@@ -1,13 +1,13 @@
 import Navigation from "./components/navigation/Navigation";
 import Home from "./components/home/Home";
-import About from "./components/about me/About";
 import Project from "./components/projects/Project";
-import Resume from "./components/resume/Resume";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 }from "react-router-dom";
+import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/skills" element={<About  />}></Route>
+        <Route path="/skills" element={<Skills />}></Route>
         <Route path="/portfolio" element={<Project />}></Route>
-        <Route path="/contact" element={<Resume />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </Router>
     </>

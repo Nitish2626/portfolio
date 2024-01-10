@@ -40,7 +40,7 @@ const Home = () => {
                         Nitish Kumar Sharma
                     </h1>
                     <h2 className="text-lg text-blue-700 font-semibold text-center mb-2">
-                        Full Stack Developer
+                        Frontend Developer
                     </h2>
 
                     <section className="w-full flex items-center justify-center">
