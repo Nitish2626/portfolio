@@ -1,6 +1,5 @@
 import profile from "../../Images/profile_image.jpg";
 import About from "../about me/About";
-import darkTheme from "../../Images/dark-theme.png";
 import SocialLinks from "../social links/SocialLinks";
 import call from "../../Images/phone.png";
 import gmail from "../../Images/gmail.png";
@@ -18,15 +17,8 @@ const Home = () => {
                 <HeadingContainer
                     src={home}
                     text="Home"
+                    style="sticky top-0"
                 />
-
-                <button className="w-8 h-8 flex items-center justify-center fixed right-0 top-2 rounded-full z-10 hover:bg-slate-200">
-                    <img
-                        src={darkTheme}
-                        alt="dark-theme"
-                        className="w-5 h-5">
-                    </img>
-                </button>
 
                 <section className="w-64 flex flex-col rounded-md py-2 px-1 mx-2 shadow-[1px_1px_10px_0px_grey]">
 

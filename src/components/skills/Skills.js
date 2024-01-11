@@ -15,6 +15,7 @@ const Skills = () => {
                 <HeadingContainer
                     src={skills}
                     text="Skills"
+                    style="sticky top-0"
                 />
                 <SkillBar 
                     src={html}

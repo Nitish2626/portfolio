@@ -3,7 +3,7 @@ import ImageTag from '../image tag/ImageTag';
 
 const SkillBar = (props) => {
     return (
-        <div className="flex items-center my-4 px-4">
+        <div className="flex items-center my-10 px-4">
             <div className="font-bold">
                 <ImageTag 
                     src={props.src}

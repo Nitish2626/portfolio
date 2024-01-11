@@ -24,6 +24,7 @@ const Project = () => {
                 <HeadingContainer
                     src={portfolio}
                     text="Portfolio"
+                    style="sticky top-0"
                 />
 
                 <ProjectContainer backgroundImage="before:bg-[url('/src/Images/weather-logo.png')]">
