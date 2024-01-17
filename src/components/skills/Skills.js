@@ -6,11 +6,14 @@ import css from "../../Images/css.png";
 import js from "../../Images/js.png";
 import tc from "../../Images/tailwind.png";
 import react from "../../Images/react.png";
+import { useTheme } from "../theme context/ThemeContext";
 
 const Skills = () => {
 
+    const {darkMode}=useTheme();
+
     return (
-        <div>
+        <div className={`w-full h-screen ${darkMode ? "bg-black" : "bg-white"}`}>
             <div className="w-full pb-10">
                 <HeadingContainer
                     src={skills}

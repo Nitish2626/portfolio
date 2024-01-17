@@ -8,10 +8,14 @@ import github from "../../Images/github.png";
 import home from "../../Images/home.png";
 import Education from "../education/Education";
 import HeadingContainer from "../heading container/HeadingContainer";
+import { useTheme } from "../theme context/ThemeContext";
 
 const Home = () => {
+
+    const {darkMode}=useTheme();
+
     return (
-        <div className="w-full px-1 sm:px-5 md:px-16 lg:px-24 xl:px-36 2xl:px-48 3xl:px-60">
+        <div className={`w-full h-screen ${darkMode ? "bg-black" : ""} sm:px-5 md:px-16 lg:px-24 xl:px-36 2xl:px-48 3xl:px-60`}>
             <div className="w-full flex flex-col items-center justify-center gap-5">
 
                 <HeadingContainer
@@ -20,7 +24,7 @@ const Home = () => {
                     style="sticky top-0"
                 />
 
-                <section className="w-64 flex flex-col rounded-md py-2 px-1 mx-2 shadow-[1px_1px_10px_0px_grey]">
+                <section className={`w-64 flex flex-col rounded-md py-2 px-1 mx-2 ${darkMode ? "shadow-inner shadow-gray-400" : "shadow-inner shadow-gray-400"}`}>
 
                     <img
                         src={profile}
@@ -28,10 +32,10 @@ const Home = () => {
                         alt="Profile"
                     >
                     </img>
-                    <h1 className="text-xl text-center">
+                    <h1 className={`text-xl text-center ${darkMode ? "text-white" : "text-black"}`}>
                         Nitish Kumar Sharma
                     </h1>
-                    <h2 className="text-lg text-blue-700 font-semibold text-center mb-2">
+                    <h2 className={`text-lg font-semibold text-center mb-2 ${darkMode ? "text-blue-400" : "text-blue-700"}`}>
                         Frontend Developer
                     </h2>
 
@@ -51,6 +55,7 @@ const Home = () => {
                         <SocialLinks
                             src={github}
                             link="http://github.com/Nitish2626"
+                            style="invert"
                         />
                     </section>
 

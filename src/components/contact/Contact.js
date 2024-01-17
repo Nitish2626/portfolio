@@ -46,19 +46,20 @@ const Contact = () => {
     };
 
     return (
-        <div className="sm:px-5 md:px-16 lg:px-24 xl:px-36 2xl:px-48 3xl:px-96">
-            <div className={`w-full ${darkMode ? "bg-black" : ""}`}>
+        <div className={`w-full h-screen ${darkMode ? "bg-black" : ""} sm:px-5 md:px-16 lg:px-24 xl:px-36 2xl:px-48 3xl:px-96`}>
+            <div className={`w-full`}>
                 <HeadingContainer
                     src={contact}
                     text="Contact Me"
                     style="sticky top-0"
                 />
 
-                <form className={`w-full flex flex-col items-center justify-center gap-4 py-5 mt-10 rounded-lg shadow-[1px_1px_10px_0px_gray] ${darkMode ? "bg-black":""}`} onSubmit={submit}>
+                <form className={`w-full flex flex-col items-center justify-center gap-8 py-5 mt-10 rounded-lg ${darkMode ? "shadow-inner shadow-white":"shadow-inner shadow-black"}`} onSubmit={submit}>
                     <section className="w-full flex items-center justify-center gap-4">
                         <ImageTag
                             src={user}
                             alt="User"
+                            style="invert"
                         />
                         <InputTag
                             placeholder="Name"
@@ -71,6 +72,7 @@ const Contact = () => {
                         <ImageTag
                             src={message}
                             alt="Message"
+                            style="invert"
                         />
                         <InputTag
                             placeholder="Message"
@@ -80,7 +82,7 @@ const Contact = () => {
                         />
                     </section>
 
-                    <button type="submit" className={`w-40 text-xl bg-green-500 text-white py-2 rounded-lg mt-2 hover:bg-green-700 ${darkMode ? "bg-blue-400" : "bg-green-500"}`}>Submit</button>
+                    <button type="submit" className={`w-40 text-xl text-white py-2 rounded-lg mt-2 ${darkMode ? "bg-blue-500 hover:bg-blue-700" : "bg-green-500 hover:bg-green-700"}`}>Submit</button>
                 </form>
             </div>
         </div>

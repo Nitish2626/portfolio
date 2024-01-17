@@ -16,10 +16,14 @@ import ListTag from "../list tag/ListTag";
 import UnorderedListCont from "../unordered list container/UnorderedListCont";
 import SocialLinks from "../social links/SocialLinks";
 import eduinfo from "../../Images/Eduinfo.png";
+import { useTheme } from "../theme context/ThemeContext";
 
 const Project = () => {
+
+    const {darkMode}=useTheme();
+
     return (
-        <div className="sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2">
+        <div className={`w-full ${darkMode ? "bg-black" : "bg-white"} sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2`}>
             <div className="w-full pb-10">
                 <HeadingContainer
                     src={portfolio}
