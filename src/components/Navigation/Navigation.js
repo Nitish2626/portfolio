@@ -1,37 +1,37 @@
 import home from "../../Images/home.png";
 import skills from '../../Images/project.png';
-import portfolio from "../../Images/resume.png";
+import projects from "../../Images/resume.png";
 import contact from '../../Images/contact.png';
 import Navlink from "../navlink container/Navlink";
 import { useTheme } from "../theme context/ThemeContext";
 
 const Navigation = () => {
 
-    const {darkMode}=useTheme();
+    const { darkMode } = useTheme();
 
     return (
-        <div>
-            <footer className={`w-full h-10 fixed flex items-center justify-evenly bottom-0 rounded-t-2xl z-20 ${darkMode ? "bg-black" : "bg-white"}`}>
+        <div className={`w-full h-10 flex items-center justify-center fixed bottom-0 z-20 ${darkMode ? "bg-black" : "bg-white"}`}>
+            <footer className={`w-full h-10 fixed flex items-center justify-evenly bottom-0 rounded-t-2xl z-20 ${darkMode ? "bg-black" : "bg-white"} sm:w-4/5 md:w-3/5 lg:w-3/5 xl:w-2/5`}>
 
-                <Navlink 
+                <Navlink
                     to="/"
                     src={home}
                     title="Home"
                 />
 
-                <Navlink 
+                <Navlink
                     to="/skills"
                     src={skills}
                     title="Skills"
                 />
 
-                <Navlink 
-                    to="/portfolio"
-                    src={portfolio}
-                    title="Portfolio"
+                <Navlink
+                    to="/projects"
+                    src={projects}
+                    title="Projects"
                 />
 
-                <Navlink 
+                <Navlink
                     to="/contact"
                     src={contact}
                     title="Contact"

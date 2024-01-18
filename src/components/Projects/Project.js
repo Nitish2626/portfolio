@@ -23,7 +23,7 @@ const Project = () => {
     const {darkMode}=useTheme();
 
     return (
-        <div className={`w-full ${darkMode ? "bg-black" : "bg-white"} sm:px-2 md:px-2 lg:px-2 xl:px-2 2xl:px-2 3xl:px-2`}>
+        <div className={`w-full ${darkMode ? "bg-black" : "bg-white"} sm:px-5 md:px-16 lg:px-24 xl:px-36 2xl:px-48 3xl:px-60`}>
             <div className="w-full pb-10">
                 <HeadingContainer
                     src={portfolio}
@@ -103,6 +103,7 @@ const Project = () => {
                     <SocialLinks
                         to="https://github.com/Nitish2626/weather-app"
                         src={github}
+                        style="invert"
                     />
                 </ProjectContainer>
 
@@ -166,6 +167,7 @@ const Project = () => {
                     <SocialLinks
                         to="https://github.com/Nitish2626/news-app"
                         src={github}
+                        style="invert"
                     />
                 </ProjectContainer>
 
@@ -217,6 +219,7 @@ const Project = () => {
                         <SocialLinks
                             link="https://github.com/Nitish2626/usecalc"
                             src={github}
+                            style="invert"
                         />
                     </section>
                 </ProjectContainer>

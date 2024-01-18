@@ -7,6 +7,7 @@ import linkedin from "../../Images/linkedin.png";
 import github from "../../Images/github.png";
 import home from "../../Images/home.png";
 import Education from "../education/Education";
+import download from "../../Images/download.png";
 import HeadingContainer from "../heading container/HeadingContainer";
 import { useTheme } from "../theme context/ThemeContext";
 
@@ -43,19 +44,29 @@ const Home = () => {
                         <SocialLinks
                             src={call}
                             link="tel:8976520212"
+                            title="Phone Number"
                         />
                         <SocialLinks
                             src={gmail}
                             link="mailto:nk.sharma2626@gmail.com"
+                            title="Gmail Id"
                         />
                         <SocialLinks
                             src={linkedin}
                             link="http://linkedin.com/in/nitish-sharma-9465ab252"
+                            title="Linkedin Id"
                         />
                         <SocialLinks
                             src={github}
                             link="http://github.com/Nitish2626"
                             style="invert"
+                            title="GitHub Id"
+                        />
+                        <SocialLinks
+                            src={download}
+                            link="https://drive.google.com/file/d/1CuZQeUPoX4wr5gHtXv1sgeDci7mhuwnk/view?usp=drive_link"
+                            style="invert"
+                            title="Download Resume"
                         />
                     </section>
 
