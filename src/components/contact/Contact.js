@@ -14,6 +14,8 @@ const Contact = () => {
     const [name,setName]=useState("");
     const [msg,setMsg]=useState("");
 
+    const [abled,setAbled]=useState(false);
+
     const nameChange=(e)=>{
         setName(e.target.value);
     };
@@ -24,6 +26,7 @@ const Contact = () => {
 
     const submit = async (e) => {
         e.preventDefault();
+        setAbled(true);
         const res=await fetch("https://backend-portfolio-tfup.onrender.com",
             {
                 method: "POST",
@@ -32,13 +35,14 @@ const Contact = () => {
                     name:name,
                     message:msg
                 })
-            },
+            }
         );
         const data=await res.json();
         if(data.message==="added"){
             alert("Thank You for your response");
             setName("");
             setMsg("");
+            setAbled(false);
         }
         else{
             alert("501 Internal Server Error");
@@ -82,7 +86,9 @@ const Contact = () => {
                         />
                     </section>
 
-                    <button type="submit" className={`w-40 text-xl text-white py-2 rounded-lg mt-2 ${darkMode ? "bg-blue-500 hover:bg-blue-700" : "bg-green-500 hover:bg-green-700"}`}>Submit</button>
+                    <button type="submit" className={`w-40 text-xl text-white py-2 rounded-lg mt-2 ${darkMode ? "bg-blue-500 hover:bg-blue-700" : "bg-green-500 hover:bg-green-700"} disabled:opacity-40`} disabled={abled}>
+                        Submit
+                    </button>
                 </form>
             </div>
         </div>
