@@ -24,7 +24,7 @@ const Contact = () => {
 
     const submit = async (e) => {
         e.preventDefault();
-        const res=await fetch("http://localhost:400/",
+        const res=await fetch("https://backend-portfolio-tfup.onrender.com",
             {
                 method: "POST",
                 headers: { "content-Type": "application/json" },
