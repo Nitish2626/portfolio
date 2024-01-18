@@ -37,7 +37,7 @@ const Home = () => {
                         Nitish Kumar Sharma
                     </h1>
                     <h2 className={`text-lg font-semibold text-center mb-2 ${darkMode ? "text-blue-400" : "text-blue-700"}`}>
-                        Frontend Developer
+                        Full Stack Developer
                     </h2>
 
                     <section className="w-full flex items-center justify-center">
