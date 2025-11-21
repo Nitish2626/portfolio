@@ -1,4 +1,3 @@
-// components/Contact.tsx
 "use client";
 
 import { useState } from "react";
@@ -65,10 +64,6 @@ const Contact = () => {
             Get In Touch
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from
-            you!
-          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">

@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import { Code2, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 

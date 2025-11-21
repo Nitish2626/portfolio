@@ -1,4 +1,3 @@
-// components/Skills.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -27,9 +26,9 @@ const Skills = () => {
       title: "Frontend",
       icon: AppWindow,
       skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 92 },
+        { name: "React.js / Next.js", level: 80 },
+        { name: "Shadcn UI", level: 90 },
+        { name: "Tailwind CSS", level: 90 },
         { name: "HTML/CSS", level: 95 },
       ],
       color: "from-blue-500 to-cyan-500",
@@ -38,10 +37,10 @@ const Skills = () => {
       title: "Backend",
       icon: Database,
       skills: [
-        { name: "Node.js", level: 88 },
-        { name: "Python", level: 85 },
-        { name: "PostgreSQL", level: 82 },
-        { name: "REST APIs", level: 90 },
+        { name: "Node.js / Express.js", level: 80 },
+        { name: "MySQL", level: 70 },
+        { name: "MongoDB", level: 80 },
+        { name: "REST APIs", level: 95 },
       ],
       color: "from-green-500 to-emerald-500",
     },
@@ -49,10 +48,10 @@ const Skills = () => {
       title: "Tools & Others",
       icon: Cloud,
       skills: [
-        { name: "Git & GitHub", level: 88 },
-        { name: "AWS", level: 75 },
-        { name: "Docker", level: 70 },
-        { name: "CI/CD", level: 78 },
+        { name: "Linux", level: 70 },
+        { name: "Git & GitHub", level: 90 },
+        { name: "AWS", level: 60 },
+        { name: "CI/CD", level: 80 },
       ],
       color: "from-purple-500 to-pink-500",
     },
