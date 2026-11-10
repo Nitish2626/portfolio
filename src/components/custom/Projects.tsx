@@ -2,38 +2,71 @@
 
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import pramanaAI from "../../../public/pramana_ai.png";
+import vaultOs from "../../../public/vault_os.png";
+import schedulePlanner from "../../../public/schedule_planner.png";
+import globeClimate from "../../../public/globe_climate.png";
+import accessCalc from "../../../public/accesscalc.png";
+import Image from "next/image";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Pramana AI",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Stripe"],
-      github: "https://github.com",
-      live: "https://example.com",
+        "Pramana AI is an AI-powered knowledge assistant built with Next.js, Gemini, and Pinecone. It uses RAG to retrieve relevant information from uploaded documents and deliver accurate, context-aware answers through a secure, real-time chat interface.",
+      image: pramanaAI,
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "MongoDB",
+        "Google Gemini",
+        "Pinecone",
+        "Langchain",
+      ],
+      github: "https://github.com/Nitish2626/pramana-ai",
+      live: "https://pramana-ai.vercel.app/",
       featured: true,
     },
     {
-      title: "Task Management App",
+      title: "Vault OS",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "/api/placeholder/600/400",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com",
-      live: "https://example.com",
+        "SecureVault is a password management app that securely stores credentials, generates strong passwords, and monitors password health. It features JWT authentication, AES-256-GCM encryption, breach checks, and easy credential management.",
+      image: vaultOs,
+      technologies: ["Next.js", "Typescript", "MongoDB", "Tailwind CSS"],
+      github: "https://github.com/Nitish2626/password-manager",
+      live: "https://managepasswords.vercel.app/",
       featured: true,
     },
     {
-      title: "Weather Dashboard",
+      title: "Schedule Planner",
       description:
-        "A beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "/api/placeholder/600/400",
-      technologies: ["Vue.js", "Chart.js", "Weather API", "Tailwind CSS"],
-      github: "https://github.com",
-      live: "https://example.com",
+        "A clean and responsive daily schedule planner built with React.js, Vite, JavaScript, and Tailwind CSS. Easily add, search, edit, and delete tasks, manage daily priorities, and save your schedule using local browser storage. Designed for a smooth experience across desktop and mobile devices.",
+      image: schedulePlanner,
+      technologies: ["React.js", "JavaScript", "Tailwind CSS"],
+      github: "https://github.com/Nitish2626/schedule-planner",
+      live: "https://schedulemyday.netlify.app/",
+      featured: true,
+    },
+    {
+      title: "Globe Climate",
+      description:
+        "A responsive Weather App that provides real-time weather updates using a Weather API. Users can search by city name or coordinates, get location-based weather, enjoy smart search suggestions, and switch between light and dark modes across all devices.",
+      image: globeClimate,
+      technologies: ["React.js", "JavaScript", "Tailwind CSS", "Weather API"],
+      github: "https://github.com/Nitish2626/globe-climate",
+      live: "https://globeclimate.netlify.app/",
+      featured: true,
+    },
+    {
+      title: "Access Calc",
+      description:
+        "A fast and responsive calculator application built with React, featuring standard arithmetic, time calculations, temperature conversion, and unit conversions for volume, mass, and length. Designed with a clean interface, smooth navigation, and mobile-friendly experience for everyday calculations.",
+      image: accessCalc,
+      technologies: ["React.js", "JavaScript", "CSS", "HTML"],
+      github: "https://github.com/Nitish2626/accesscalc",
+      live: "https://accesscalc.netlify.app/",
       featured: true,
     },
   ];
@@ -49,7 +82,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Featured Projects
+            Projects
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
         </motion.div>
@@ -62,17 +95,16 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className={`w-11/12 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group`}
+              className={`w-11/12 sm:w-96 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group px-2`}
             >
               <div className={`flex flex-col gap-4`}>
                 {/* Project Image */}
-                <div className={`w-full h-60 relative overflow-hidden `}>
-                  <div className="w-full h-full bg-linear-to-br from-blue-400 to-purple-500 flex items-center justify-center">
-                    <span className="text-white font-semibold">
-                      Project Image
-                    </span>
-                  </div>
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300" />
+                <div className="transition-all duration-300">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="h-40 flex items-center justify-center object-contain"
+                  />
                 </div>
 
                 {/* Project Content */}
@@ -103,14 +135,14 @@ const Projects = () => {
                       className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                     >
                       <FaGithub className="h-5 w-5" />
-                      <span>Code</span>
+                      {/* <span>Code</span> */}
                     </a>
                     <a
                       href={project.live}
                       className="flex items-center space-x-2 text-gray-700 hover:text-blue-600 transition-colors font-medium"
                     >
                       <ExternalLink className="h-5 w-5" />
-                      <span>Live Demo</span>
+                      {/* <span>Live Demo</span> */}
                     </a>
                   </div>
                 </div>
@@ -118,23 +150,6 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* View More Projects */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <a
-            href="https://github.com"
-            className="inline-flex items-center space-x-2 bg-gray-800 hover:bg-gray-900 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
-          >
-            <span>View All Projects</span>
-            <ArrowRight className="h-5 w-5" />
-          </a>
-        </motion.div> */}
       </div>
     </section>
   );

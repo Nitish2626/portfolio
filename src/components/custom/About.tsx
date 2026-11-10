@@ -51,7 +51,7 @@ const About = () => {
               Crafting Digital Experiences
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I'm a passionate full-stack developer with over 6 months of
+              I&apos;m a passionate full-stack developer with over 6 months of
               experience creating web applications that are both beautiful and
               functional. I specialize in modern technologies like React,
               Next.js, Node.js, and more.

@@ -5,9 +5,9 @@ import { Code2, Database, Cloud, GitBranch, AppWindow } from "lucide-react";
 import { FaReact } from "react-icons/fa";
 import { TbBrandTypescript } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill, RiFlutterFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { SiMongodb, SiExpress } from "react-icons/si";
+import { SiMongodb, SiExpress  } from "react-icons/si";
 
 const Skills = () => {
   const skillCategories = [
@@ -58,6 +58,7 @@ const Skills = () => {
   ];
 
   const techIcons = [
+    { icon: RiFlutterFill, name: "Flutter", color: "text-blue-400" },
     { icon: RiNextjsFill, name: "Next JS", color: "text-black" },
     { icon: FaReact, name: "React JS", color: "text-cyan-400" },
     { icon: FaNodeJs, name: "Node.js", color: "text-green-600" },

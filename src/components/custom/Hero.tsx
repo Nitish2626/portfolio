@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ChevronDown, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const titles = ["Full Stack Developer", "Freelancer", "Problem Solver"];
+  const titles = ["Full Stack Developer", "Problem Solver"];
 
   useEffect(() => {
     const currentTitle = titles[currentIndex];
@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6">
-            Hi, I'm <br></br>
+            Hi, I&apos;m <br></br>
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">
               Nitish Kumar Sharma
             </span>
@@ -50,7 +50,7 @@ const Hero = () => {
 
           <div className="h-16 mb-8">
             <h2 className="text-2xl md:text-4xl text-gray-600 font-light">
-              I'm a{" "}
+              I&apos;m a{" "}
               <span className="text-blue-600 font-semibold border-r-2 border-blue-600 animate-pulse">
                 {displayText}
               </span>
@@ -63,23 +63,22 @@ const Hero = () => {
             experiences.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
-            <a
-              href="#projects"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="border-2 border-gray-800 hover:bg-gray-800 hover:text-white text-gray-800 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
-            >
-              Get In Touch
-            </a>
-          </div>
-
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16">
+            <a
+              href="tel:+918976520212"
+              target="blank"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+            >
+              <Phone className="h-6 w-6 text-purple-800" />
+            </a>
+            <a
+              href="mailto:nitishksharma517@gmail.com"
+              target="blank"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+            >
+              <Mail className="h-6 w-6 text-red-500" />
+            </a>
             <a
               href="https://github.com/Nitish2626"
               target="blank"
@@ -94,24 +93,17 @@ const Hero = () => {
             >
               <FaLinkedin className="h-6 w-6 text-blue-600" />
             </a>
-            <a
-              href="mailto:nitishksharma517@gmail.com"
-              target="blank"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
-            >
-              <Mail className="h-6 w-6 text-red-500" />
-            </a>
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <a
               href="#about"
               className="text-gray-600 hover:text-blue-600 transition-colors"
             >
               <ChevronDown className="h-8 w-8" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

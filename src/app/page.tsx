@@ -1,6 +1,6 @@
 import About from "@/components/custom/About";
 import Contact from "@/components/custom/Contact";
-import Footer from "@/components/custom/Footer";
+import { Experiences } from "@/components/custom/Experiences";
 import Header from "@/components/custom/Header";
 import Hero from "@/components/custom/Hero";
 import Projects from "@/components/custom/Projects";
@@ -14,10 +14,10 @@ const HomePage = () => {
         <Hero />
         <About />
         <Skills />
+        <Experiences />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
       </main>
-      {/* <Footer /> */}
     </div>
   );
 };
