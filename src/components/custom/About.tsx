@@ -51,15 +51,20 @@ const About = () => {
               Crafting Digital Experiences
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I&apos;m a passionate full-stack developer with over 6 months of
-              experience creating web applications that are both beautiful and
-              functional. I specialize in modern technologies like React,
-              Next.js, Node.js, and more.
+              I&apos;m a passionate web developer focused on creating modern,
+              responsive, and user-friendly digital experiences. I enjoy
+              transforming ideas into clean, engaging interfaces that not only
+              look great but also deliver real value to users. With a strong
+              foundation in frontend and full-stack development, I combine
+              creativity, problem-solving, and technical expertise to build
+              meaningful solutions that make an impact.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              My approach combines technical expertise with a keen eye for
-              design, ensuring that every project I work on not only works
-              flawlessly but also provides an exceptional user experience.
+              My approach is simple: design with purpose, code with precision,
+              and always aim to create experiences that are both visually
+              appealing and highly functional. I&apos;m dedicated to continuous
+              learning and building projects that reflect innovation, quality,
+              and a strong user-first mindset.
             </p>
           </motion.div>
         </div>

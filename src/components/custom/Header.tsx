@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, Code2 } from "lucide-react";
+import Image from "next/image";
+import profileImage from "../../../public/profile_image.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,10 +37,16 @@ const Header = () => {
           {/* Logo */}
           <a
             href="#home"
-            className="flex items-center space-x-2 text-2xl font-bold text-gray-800"
+            className="flex items-center space-x-2"
           >
-            <Code2 className="h-8 w-8 text-blue-600" />
-            <span>Portfolio</span>
+            {/* <Code2 className="h-8 w-8 text-blue-600" /> */}
+            <Image
+              src={profileImage}
+              className="w-8 h-8 rounded-full"
+              alt="Image"
+            />
+
+            <span className="text-lg font-semibold text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-purple-600">Nitish Sharma</span>
           </a>
 
           {/* Desktop Navigation */}

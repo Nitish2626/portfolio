@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, ExternalLink } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
@@ -57,11 +57,11 @@ const Hero = () => {
             </h2>
           </div>
 
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
             I create beautiful, functional, and user-friendly web applications
             that solve real-world problems and deliver exceptional user
             experiences.
-          </p>
+          </p> */}
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-16">
@@ -69,6 +69,7 @@ const Hero = () => {
               href="tel:+918976520212"
               target="blank"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+              title="Phone"
             >
               <Phone className="h-6 w-6 text-purple-800" />
             </a>
@@ -76,6 +77,7 @@ const Hero = () => {
               href="mailto:nitishksharma517@gmail.com"
               target="blank"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+              title="E-Mail"
             >
               <Mail className="h-6 w-6 text-red-500" />
             </a>
@@ -83,6 +85,7 @@ const Hero = () => {
               href="https://github.com/Nitish2626"
               target="blank"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+              title="Visit GitHub"
             >
               <FaGithub className="h-6 w-6 text-gray-800" />
             </a>
@@ -90,8 +93,18 @@ const Hero = () => {
               href="https://www.linkedin.com/in/nitish-kumar-sharma-9465ab252/"
               target="blank"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+              title="Visit Linkedin"
             >
               <FaLinkedin className="h-6 w-6 text-blue-600" />
+            </a>
+            <a
+              href="/Nitish_Resume.pdf"
+              target="blank"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-gray-50"
+              rel="noopener noreferrer"
+              title="View Resume"
+            >
+              <ExternalLink className="h-6 w-6 text-green-600" />
             </a>
           </div>
 

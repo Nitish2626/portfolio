@@ -13,9 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nitish Kumar Sharma - Full Stack Developer",
+  title: "Nitish Kumar Sharma",
   description:
     "Portfolio of Nitish Kumar Sharma - Full Stack Developer specializing in React, Next.js, and modern web technologies",
+  icons: {
+    icon: "/profile_image.png",
+  },
 };
 
 export default function RootLayout({
