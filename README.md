@@ -2,7 +2,7 @@
 
 A modern personal portfolio website built with Next.js and Tailwind CSS, designed to showcase skills, experience, projects, and contact information in a clean and professional layout.
 
-Live App: https://.vercel.app/
+Live App: https://sharmanitish.vercel.app/
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black)
 ![MongoDB](https://img.shields.io/badge/MongoDB-6.x-47A248)
